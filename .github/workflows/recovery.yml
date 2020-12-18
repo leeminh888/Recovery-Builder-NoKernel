@@ -16,7 +16,7 @@ on:
 env:
   MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0 -b android-9.0
   DEVICE: V430A
-  DT_LINK:  https://github.com/leeminh888/joy3_twrp
+  DT_LINK:  https://github.com/leeminh888/android_device_vsmart_V430A
   DT_PATH: device/vsmart/V430A
   TARGET: recoveryimage
   TZ: Asia/Kolkata
