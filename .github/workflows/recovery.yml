@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni -b android-9.0
-  DEVICE: V620A
-  DT_LINK:  https://github.com/leeminh888/android_device_vsmart_V620A-pbrp -b shrp
-  DT_PATH: device/vsmart/V620A
+  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0
+  DEVICE: V430A
+  DT_LINK:  https://github.com/leeminh888/android_device_vsmart_V430A-TWRP -b twrp-9
+  DT_PATH: device/vsmart/V430A
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
