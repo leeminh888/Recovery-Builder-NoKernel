@@ -14,7 +14,7 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/techyminati/SHRP_build -b android-10.0
+  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
   DEVICE: V620A
   DT_LINK:  https://github.com/leeminh888/android_device_vsmart_V620A-pbrp -b shrp
   DT_PATH: device/vsmart/V620A
