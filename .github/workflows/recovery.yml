@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
-  DEVICE: mh21m
-  DT_LINK:  https://github.com/someonetg/twrp_mh2lm
-  DT_PATH: device/lge/mh2lm
+  MANIFEST: https://github.com/JamieHoSzeYui/shrp_manifest -b v3_10.0
+  DEVICE: V620A
+  DT_LINK:  https://github.com/leeminh888/android_device_vsmart_V620A-pbrp -b shrp
+  DT_PATH: device/vsmart/V620A
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
