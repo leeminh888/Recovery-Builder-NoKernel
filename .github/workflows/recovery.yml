@@ -14,11 +14,11 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://github.com/JamieHoSzeYui/shrp_manifest -b v3_10.0
-  DEVICE: V620A
-  DT_LINK:  https://github.com/leeminh888/android_device_vsmart_V620A-pbrp -b shrp
-  DT_PATH: device/vsmart/V620A
-  TARGET: recoveryimage
+  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
+  DEVICE: g900em
+  DT_LINK:  https://github.com/leeminh888/android_device_lge_g900em-twrp -b pb10
+  DT_PATH: device/lge/g900em
+  TARGET: bootimage
   TZ: Asia/Kolkata
 
 jobs:
