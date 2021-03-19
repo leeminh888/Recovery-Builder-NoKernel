@@ -14,11 +14,11 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
-  DEVICE: g900em
-  DT_LINK:  https://github.com/leeminh888/android_device_lge_g900em-twrp -b pb10
-  DT_PATH: device/lge/g900em
-  TARGET: bootimage
+  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni -b v3_9.0
+  DEVICE: casuarina
+  DT_LINK:  https://github.com/leeminh888/twrp_device_vsmart_casuarina -b shrp10
+  DT_PATH: device/vsmart/casuarina
+  TARGET: recoveryimage
   TZ: Asia/Kolkata
 
 jobs:
