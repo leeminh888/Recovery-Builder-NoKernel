@@ -1,6 +1,7 @@
 name: Building recovery custom
 
-on:
+on: [push]
+
 #  release:
 #    types: [published]
 #  push:
@@ -14,9 +15,9 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni -b v3_9.0
+  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0
   DEVICE: casuarina
-  DT_LINK:  https://github.com/leeminh888/twrp_device_vsmart_casuarina -b shrp10
+  DT_LINK:  https://github.com/leeminh888/twrp_device_vsmart_casuarina -b pbrp
   DT_PATH: device/vsmart/casuarina
   TARGET: recoveryimage
   TZ: Asia/Kolkata
