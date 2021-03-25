@@ -1,11 +1,22 @@
-name: Building recovery custom
+name: Building recovery
 
-on: [push]
+on:
+#  release:
+#    types: [published]
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - '.config'
+#  schedule:
+#    - cron: 0 8 * * 5
+  watch:
+    types: [started]
 
 env:
-  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
+  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
   DEVICE: V420A
-  DT_LINK:  https://github.com/leeminh888/recovery-tree-V420A
+  DT_LINK: https://github.com/leeminh888/recovery-tree-V420A
   DT_PATH: device/vsmart/V420A
   TARGET: recoveryimage
   TZ: Asia/Kolkata
@@ -35,8 +46,8 @@ jobs:
              mkdir work
              cd work
              repo init -u $MANIFEST --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
-             repo sync -j4
-             git clone $DT_LINK --depth=1 --single-branch $DT_PATH
+             repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+             git clone $DT_LINK --depth=1 --single-branch $DT_PATH 
              
        - name: Build
          run: |
@@ -47,4 +58,4 @@ jobs:
          run: |
               cd work/out/target/product/$DEVICE
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet *$DEVICE*.zip    
+              ./transfer wet recovery.img && ./transfer wet *Unofficial*.zip
