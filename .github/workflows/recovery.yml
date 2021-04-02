@@ -3,10 +3,10 @@ name: Building recovery
 on: [push]
 
 env:
-  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
-  DEVICE: V420A
-  DT_LINK: https://github.com/leeminh888/recovery-tree-V420A
-  DT_PATH: device/vsmart/V420A
+  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
+  DEVICE: vayu
+  DT_LINK: https://github.com/leeminh888/android_device_xiaomi_vayu
+  DT_PATH: device/xiaomi/vayu
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
