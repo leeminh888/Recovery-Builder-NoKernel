@@ -7,7 +7,7 @@ env:
   DEVICE: vayu
   DT_LINK: https://github.com/leeminh888/android_device_xiaomi_vayu -b test4
   DT_PATH: device/xiaomi/vayu
-  TARGET: recoveryimage
+  TARGET: bootimage
   TZ: Asia/Kolkata
 
 jobs:
