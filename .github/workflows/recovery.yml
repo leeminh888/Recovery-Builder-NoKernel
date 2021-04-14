@@ -5,7 +5,7 @@ on: [push]
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
   DEVICE: alioth
-  DT_LINK: https://github.com/Leminh8686/alioth-recovery-tree
+  DT_LINK: https://github.com/Leminh8686/alioth-recovery-tree -b 2
   DT_PATH: device/xiaomi/alioth
   TARGET: recoveryimage
   TZ: Asia/Kolkata
