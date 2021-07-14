@@ -1,4 +1,4 @@
-name: Building recovery buldr...
+name: Building recovery bulder
 
 on: [push]
 
